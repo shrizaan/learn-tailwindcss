@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer  {
+  .container-padding {
+    @apply mx-72;
+  }
+}
