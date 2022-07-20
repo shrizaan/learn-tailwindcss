@@ -5,6 +5,8 @@ module.exports = {
     container: {
       center: true,
       padding: "1rem",
+      "margin-left": "7rem",
+      "margin-right": "7rem",
     },
     extend: {
       colors: {
