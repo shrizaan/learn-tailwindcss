@@ -1,13 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="src/output.css">
-  <title>Belajar TailwindCSS</title>
-</head>
-<body>
-  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <title>Belajar TailwindCSS</title>
+  </head>
+  <body>
+    <!-- Hero Section Start -->
+    <section id="home" class="pt-24">
+      <div class="container lg:px-10 lg:mt-6">
+        <div class="flex flex-wrap md:flex-nowrap">
+          <div
+            class="w-full self-center px-8 lg:w-1/2 lg:ml-[4.5rem] order-2 md:order-1"
+          >
+            <h1 class="text-base font-semibold text-dark md:text-lg leading-5">
+              Halo semua👋,
+              <span class="block text-slate-500">perkenalkan nama saya</span>
+              <span
+                class="block font-bold text-primary hover:text-secondary text-3xl md:text-5xl lg:text-6xl transition-colors ease-in-out duration-300"
+                >Shahrizan<span class="animate-pulse duration-75"
+                  >🐱‍👤</span
+                ></span
+              >
+            </h1>
+            <h2 class="font-medium text-lg mb-3 text-slate-500 lg:text-xl">
+              Student & <span class="text-dark">Web Developer</span>
+            </h2>
+            <p class="font-medium text-slate-500 mb-8 leading-relaxed">
+              Mari belajar web programming bersama saya!. Mudah dimengerti dan
+              pastinya
+              <span
+                class="font-bold underline underline-offset-4 decoration-primary decoration-2"
+                >langsung praktik</span
+              >.
+            </p>
+
+            <a
+              href="#"
+              class="text-base font-semibold text-white bg-primary py-3 px-8 hover:shadow-lg hover:bg-teal-600 rounded-full duration-300 ease-in-out"
+              >Hubungi Saya</a
+            >
+          </div>
+          <div class="w-full self-end px-8 mb-8 lg:w-1/2 order-1 md:order-2">
+            <svg
+              class="w-80 mx-auto fill-secondary hover:fill-primary duration-300 ease-in"
+              viewBox="0 0 200 187"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <mask id="mask0" mask-type="alpha">
+                <path
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+              </mask>
+              <g mask="url(#mask0)">
+                <path
+                  d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                      -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                />
+                <image href="src/img/hero.png" class="w-44" x="12" y="18" />
+              </g>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero Section End -->
+  </body>
 </html>
