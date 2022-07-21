@@ -7,6 +7,11 @@
     @apply container px-8 lg:px-28 lg:mt-6;
   }
 }
+
+.navbar-fixed {
+  @apply fixed z-50 bg-white bg-opacity-80 backdrop-blur-sm shadow-inner;
+}
+
 .hamburger-active > span:nth-child(1) {
   @apply rotate-45;
 }
