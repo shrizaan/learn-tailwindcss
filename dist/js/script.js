@@ -7,6 +7,8 @@ window.onscroll = function () {
   } else {
     header.classList.remove("navbar-fixed");
   }
+  hamburger.classList.remove("hamburger-active");
+  navMenu.classList.add("hidden");
 };
 
 // Hamburger
@@ -16,7 +18,7 @@ const navMenu = document.getElementById("nav-menu");
 hamburger.addEventListener("click", function () {
   const spanHamburger = hamburger.querySelectorAll("span");
   hamburger.classList.toggle("hamburger-active");
-  console.log(navMenu)
+  console.log(navMenu);
   navMenu.classList.toggle("hidden");
   spanHamburger.forEach(function (span) {
     span.classList.toggle("bg-primary");
