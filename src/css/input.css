@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer  {
-  .container-padding {
-    @apply mx-72;
+  .container-default {
+    @apply container px-8 lg:px-28 lg:mt-6;
   }
 }
