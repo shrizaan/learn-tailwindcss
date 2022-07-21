@@ -11,9 +11,13 @@ window.onscroll = function () {
 
 // Hamburger
 const hamburger = document.getElementById("hamburger");
+const navMenu = document.getElementById("nav-menu");
+
 hamburger.addEventListener("click", function () {
   const spanHamburger = hamburger.querySelectorAll("span");
   hamburger.classList.toggle("hamburger-active");
+  console.log(navMenu)
+  navMenu.classList.toggle("hidden");
   spanHamburger.forEach(function (span) {
     span.classList.toggle("bg-primary");
   });
