@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/shrizaan/learn-tailwindcss#readme",
   "devDependencies": {
+    "prettier": "^2.7.1",
+    "prettier-plugin-tailwindcss": "^0.1.12",
     "tailwindcss": "^3.1.6"
   }
 }
