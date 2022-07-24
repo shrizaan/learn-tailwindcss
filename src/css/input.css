@@ -4,12 +4,12 @@
 
 @layer {
   .container-default {
-    @apply container px-6 md:px-8 lg:px-28 lg:mt-6;
+    @apply container px-6 md:px-8 lg:mt-6 lg:px-28;
   }
 }
 
 .navbar-fixed {
-  @apply fixed z-50 bg-white bg-opacity-80 backdrop-blur-sm shadow-inner;
+  @apply fixed z-50 bg-white bg-opacity-80 shadow-inner backdrop-blur-sm;
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -22,6 +22,10 @@
   @apply -rotate-45;
 }
 
-.fade {
-  @apply invisible opacity-0 scale-0;
+.deactive {
+  @apply invisible scale-0 opacity-0;
+}
+
+.active {
+  @apply visible scale-100 opacity-100;
 }
