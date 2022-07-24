@@ -10,6 +10,7 @@ window.onscroll = function () {
     navMenu.classList.add("hidden");
 
     toTop.classList.add("block");
+    toTop.classList.add("active");
     toTop.classList.remove("hidden");
   } else {
     header.classList.remove("navbar-fixed");
@@ -17,6 +18,11 @@ window.onscroll = function () {
     toTop.classList.remove("block");
   }
 };
+
+window.addEventListener("load", function () {
+  const toTop = document.getElementById("to-top");
+  toTop.classList.add("hidden");
+});
 
 // Hamburger
 const hamburger = document.getElementById("hamburger");
@@ -38,5 +44,32 @@ window.addEventListener("click", function (e) {
     hamburger.classList.remove("hamburger-active");
     navMenu.classList.add("hidden");
     const spanHamburger = hamburger.querySelectorAll("span");
+  }
+});
+
+// light and dark mode button event
+const modeToggle = document.getElementById("toggle-mode");
+modeToggle.addEventListener("click", function () {
+  const html = document.querySelector("html");
+  const lightMode = document.getElementById("light-mode");
+  const darkMode = document.getElementById("dark-mode");
+
+  if (html.classList.contains("dark")) {
+    html.classList.remove("dark");
+    lightMode.classList.add("active");
+    lightMode.classList.add("active");
+    lightMode.classList.remove("hidden");
+    darkMode.classList.add("hidden");
+    setTimeout(function () {
+      lightMode.classList.remove("active");
+    }, 300);
+  } else {
+    html.classList.add("dark");
+    darkMode.classList.toggle("active");
+    lightMode.classList.add("hidden");
+    darkMode.classList.remove("hidden");
+    setTimeout(function () {
+      darkMode.classList.remove("active");
+    }, 300);
   }
 });
