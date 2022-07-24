@@ -10,6 +10,7 @@ window.onscroll = function () {
     navMenu.classList.add("hidden");
 
     toTop.classList.add("block");
+    toTop.classList.add("active");
     toTop.classList.remove("hidden");
   } else {
     header.classList.remove("navbar-fixed");
