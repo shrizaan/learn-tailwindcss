@@ -562,6 +562,10 @@ video {
   visibility: hidden;
 }
 
+.fixed {
+  position: fixed;
+}
+
 .absolute {
   position: absolute;
 }
@@ -588,6 +592,10 @@ video {
 
 .top-full {
   top: 100%;
+}
+
+.bottom-4 {
+  bottom: 1rem;
 }
 
 .z-50 {
@@ -689,6 +697,10 @@ video {
   height: 50vw;
 }
 
+.h-14 {
+  height: 3.5rem;
+}
+
 .w-full {
   width: 100%;
 }
@@ -703,6 +715,10 @@ video {
 
 .w-12 {
   width: 3rem;
+}
+
+.w-14 {
+  width: 3.5rem;
 }
 
 .max-w-\[250px\] {
@@ -888,6 +904,10 @@ video {
 
 .fill-primary {
   fill: #f43f5e;
+}
+
+.fill-rose-200 {
+  fill: #fecdd3;
 }
 
 .object-fill {
@@ -1246,6 +1266,80 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@-webkit-keyframes scale-display-reverse {
+  0% {
+    display: inline-flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  99% {
+    display: inline-flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+@keyframes scale-display-reverse {
+  0% {
+    display: inline-flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  99% {
+    display: inline-flex;
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    display: none;
+    opacity: 0;
+    transform: scale(0);
+  }
+}
+
+.deactive {
+  -webkit-animation: scale-display-reverse .3s ease-in-out;
+          animation: scale-display-reverse .3s ease-in-out;
+}
+
+@-webkit-keyframes scale-display {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes scale-display {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.active {
+  -webkit-animation: scale-display .3s ease-in-out;
+          animation: scale-display .3s ease-in-out;
+}
+
 .invalid\:border-red-500:invalid {
   --tw-border-opacity: 1;
   border-color: rgb(239 68 68 / var(--tw-border-opacity));
@@ -1352,6 +1446,10 @@ video {
 
 .group:hover .group-hover\:fill-secondary {
   fill: #14b8a6;
+}
+
+.group:hover .group-hover\:fill-teal-200 {
+  fill: #99f6e4;
 }
 
 .peer:invalid ~ .peer-invalid\:visible {
