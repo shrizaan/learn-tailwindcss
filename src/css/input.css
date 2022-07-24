@@ -23,9 +23,9 @@
 }
 
 .deactive {
-  @apply invisible scale-0 opacity-0;
+  @apply animate-scale-display-reverse;
 }
 
 .active {
-  @apply visible scale-100 opacity-100;
+  @apply animate-scale-display;
 }

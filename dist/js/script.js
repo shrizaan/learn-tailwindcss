@@ -6,15 +6,16 @@ window.onscroll = function () {
 
   if (window.scrollY > fixedNav) {
     header.classList.add("navbar-fixed");
-    toTop.classList.add("active");
-    toTop.classList.remove("deactive");
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+
+    toTop.classList.add("block");
+    toTop.classList.remove("hidden");
   } else {
     header.classList.remove("navbar-fixed");
-    toTop.classList.add("deactive");
-    toTop.classList.remove("active");
+    toTop.classList.add("hidden");
+    toTop.classList.remove("block");
   }
-  hamburger.classList.remove("hamburger-active");
-  navMenu.classList.add("hidden");
 };
 
 // Hamburger
@@ -29,4 +30,13 @@ hamburger.addEventListener("click", function () {
   spanHamburger.forEach(function (span) {
     span.classList.toggle("bg-primary");
   });
+});
+
+// Click outside of navbar to close
+window.addEventListener("click", function (e) {
+  if (e.target.id !== "hamburger" && e.target.id !== "nav-menu") {
+    hamburger.classList.remove("hamburger-active");
+    navMenu.classList.add("hidden");
+    const spanHamburger = hamburger.querySelectorAll("span");
+  }
 });
