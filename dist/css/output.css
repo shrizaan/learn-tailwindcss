@@ -901,8 +901,8 @@ video {
 }
 
 .from-primary {
-  --tw-gradient-from: #f43f5e;
-  --tw-gradient-to: rgb(244 63 94 / 0);
+  --tw-gradient-from: #fb7185;
+  --tw-gradient-to: rgb(251 113 133 / 0);
   --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
 }
 
@@ -919,7 +919,7 @@ video {
 }
 
 .fill-primary {
-  fill: #f43f5e;
+  fill: #fb7185;
 }
 
 .fill-rose-200 {
@@ -1077,7 +1077,7 @@ video {
 
 .text-primary {
   --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
+  color: rgb(251 113 133 / var(--tw-text-opacity));
 }
 
 .text-dark {
@@ -1116,8 +1116,8 @@ video {
 }
 
 .decoration-primary {
-  -webkit-text-decoration-color: #f43f5e;
-          text-decoration-color: #f43f5e;
+  -webkit-text-decoration-color: #fb7185;
+          text-decoration-color: #fb7185;
 }
 
 .decoration-2 {
@@ -1391,7 +1391,7 @@ video {
 }
 
 .hover\:fill-primary:hover {
-  fill: #f43f5e;
+  fill: #fb7185;
 }
 
 .hover\:text-secondary:hover {
@@ -1401,7 +1401,7 @@ video {
 
 .hover\:text-primary:hover {
   --tw-text-opacity: 1;
-  color: rgb(244 63 94 / var(--tw-text-opacity));
+  color: rgb(251 113 133 / var(--tw-text-opacity));
 }
 
 .hover\:decoration-secondary:hover {
@@ -1457,7 +1457,7 @@ video {
 
 .group:hover .group-hover\:bg-primary {
   --tw-bg-opacity: 1;
-  background-color: rgb(244 63 94 / var(--tw-bg-opacity));
+  background-color: rgb(251 113 133 / var(--tw-bg-opacity));
 }
 
 .group:hover .group-hover\:fill-teal-100 {
@@ -1499,6 +1499,11 @@ video {
   background-color: rgb(19 78 74 / var(--tw-bg-opacity));
 }
 
+.dark .dark\:bg-rose-900 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(136 19 55 / var(--tw-bg-opacity));
+}
+
 .dark .dark\:font-normal {
   font-weight: 400;
 }
@@ -1506,6 +1511,10 @@ video {
 .dark .dark\:text-light {
   --tw-text-opacity: 1;
   color: rgb(229 231 235 / var(--tw-text-opacity));
+}
+
+.dark .dark\:opacity-80 {
+  opacity: 0.8;
 }
 
 .dark .dark\:shadow-slate-700 {
@@ -1705,7 +1714,7 @@ video {
 
   .lg\:hover\:text-primary:hover {
     --tw-text-opacity: 1;
-    color: rgb(244 63 94 / var(--tw-text-opacity));
+    color: rgb(251 113 133 / var(--tw-text-opacity));
   }
 
   .dark .dark\:lg\:border-none {
