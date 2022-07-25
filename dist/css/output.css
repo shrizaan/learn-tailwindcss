@@ -1085,9 +1085,9 @@ video {
   color: rgb(15 23 42 / var(--tw-text-opacity));
 }
 
-.text-light {
+.text-secondary-dark {
   --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
+  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -1108,11 +1108,6 @@ video {
 .text-slate-300 {
   --tw-text-opacity: 1;
   color: rgb(203 213 225 / var(--tw-text-opacity));
-}
-
-.text-secondary-dark {
-  --tw-text-opacity: 1;
-  color: rgb(100 116 139 / var(--tw-text-opacity));
 }
 
 .underline {
@@ -1272,7 +1267,7 @@ video {
 }
 
 .dark .navbar-fixed {
-  background-color: rgb(15 23 42 / 0.6);
+  background-color: rgb(15 23 42 / 0.5);
 }
 
 .hamburger-active > span:nth-child(1) {
@@ -1484,11 +1479,6 @@ video {
 .dark .dark\:bg-slate-900 {
   --tw-bg-opacity: 1;
   background-color: rgb(15 23 42 / var(--tw-bg-opacity));
-}
-
-.dark .dark\:text-light {
-  --tw-text-opacity: 1;
-  color: rgb(229 231 235 / var(--tw-text-opacity));
 }
 
 .dark .dark\:text-secondary-dark {
