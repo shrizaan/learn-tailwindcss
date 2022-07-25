@@ -914,8 +914,8 @@ video {
   fill: #14b8a6;
 }
 
-.fill-\[\#f88b9e\] {
-  fill: #f88b9e;
+.fill-\[\#ffffff\] {
+  fill: #ffffff;
 }
 
 .fill-primary {
@@ -924,14 +924,6 @@ video {
 
 .fill-rose-200 {
   fill: #fecdd3;
-}
-
-.fill-\[\#fff\] {
-  fill: #fff;
-}
-
-.fill-\[\#ffffff\] {
-  fill: #ffffff;
 }
 
 .object-fill {
