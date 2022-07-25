@@ -24,7 +24,7 @@ module.exports = {
         "scale-display-reverse": "scale-display-reverse .3s ease-in-out",
       },
       colors: {
-        primary: "#f43f5e",
+        primary: "#fb7185",
         secondary: "#14b8a6",
         dark: "#0f172a",
         "secondary-dark": "#64748b",

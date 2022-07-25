@@ -22,6 +22,27 @@ window.onscroll = function () {
 window.addEventListener("load", function () {
   const toTop = document.getElementById("to-top");
   toTop.classList.add("hidden");
+  const html = document.querySelector("html");
+  const lightMode = document.getElementById("light-mode");
+  const darkMode = document.getElementById("dark-mode");
+
+  if (
+    localStorage.theme === "dark" ||
+    (!("theme" in localStorage) &&
+      window.matchMedia("(prefers-color-scheme: dark)").matches)
+  ) {
+    document.documentElement.classList.add("dark");
+  } else {
+    document.documentElement.classList.remove("dark");
+  }
+
+  if (html.classList.contains("dark")) {
+    darkMode.classList.remove("hidden");
+    lightMode.classList.add("hidden");
+  } else {
+    lightMode.classList.remove("hidden");
+    darkMode.classList.add("hidden");
+  }
 });
 
 // Hamburger
@@ -57,12 +78,12 @@ modeToggle.addEventListener("click", function () {
   if (html.classList.contains("dark")) {
     html.classList.remove("dark");
     lightMode.classList.add("active");
-    lightMode.classList.add("active");
     lightMode.classList.remove("hidden");
     darkMode.classList.add("hidden");
     setTimeout(function () {
       lightMode.classList.remove("active");
     }, 300);
+    localStorage.setItem("theme", "light");
   } else {
     html.classList.add("dark");
     darkMode.classList.toggle("active");
@@ -71,5 +92,6 @@ modeToggle.addEventListener("click", function () {
     setTimeout(function () {
       darkMode.classList.remove("active");
     }, 300);
+    localStorage.setItem("theme", "dark");
   }
 });

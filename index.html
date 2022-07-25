@@ -47,7 +47,7 @@
           </div>
           <nav
             id="nav-menu"
-            class="absolute right-4 top-full hidden w-full max-w-[250px] overflow-auto rounded-lg bg-white py-4 shadow-lg lg:static lg:flex lg:max-w-full lg:justify-end lg:bg-transparent lg:shadow-none"
+            class="absolute right-4 top-full hidden w-full max-w-[250px] overflow-auto rounded-lg bg-white py-4 shadow-lg dark:border-2 dark:border-slate-900 dark:bg-slate-900/90 dark:shadow-slate-700 lg:static lg:flex lg:max-w-full lg:justify-end lg:bg-transparent lg:shadow-none dark:lg:border-none dark:lg:bg-transparent"
           >
             <ul class="block lg:flex">
               <li class="group">
@@ -92,7 +92,7 @@
                   >Contact</a
                 >
               </li>
-              <li class="group ml-4">
+              <li class="group lg:ml-4">
                 <button
                   type="button"
                   class="flex h-full w-full items-center justify-center"
@@ -125,7 +125,7 @@
         <div class="flex flex-wrap md:flex-nowrap">
           <div class="order-2 w-full self-center md:order-1 lg:w-1/2">
             <h1
-              class="text-base font-semibold leading-5 text-dark dark:text-secondary-dark md:text-lg"
+              class="text-base font-semibold leading-5 text-dark dark:font-normal dark:text-light md:text-lg"
             >
               Halo semua👋, saya
               <span
@@ -135,16 +135,18 @@
                 ></span
               >
             </h1>
-            <h2 class="mb-3 text-lg font-medium text-dark lg:text-xl">
+            <h2
+              class="mb-3 text-lg font-medium text-dark dark:text-light lg:text-xl"
+            >
               Student & Web Developer
             </h2>
             <p
-              class="mb-8 text-base font-medium leading-relaxed text-secondary-dark"
+              class="mb-8 text-base font-medium leading-relaxed text-secondary-dark dark:font-normal dark:text-light"
             >
               Mari belajar web programming bersama saya!. Mudah dimengerti dan
               pastinya
               <span
-                class="underline-offset-3 font-bold underline decoration-primary decoration-2"
+                class="underline-offset-3 font-semibold underline decoration-primary decoration-2"
                 >langsung praktik</span
               >.
             </p>
@@ -192,7 +194,7 @@
     <!-- Hero Section End -->
 
     <!-- About Section Start -->
-    <section id="about" class="pt-36 pb-32">
+    <section id="about" class="pt-36 pb-32 dark:bg-slate-900">
       <div class="container-default lg:mt-6 lg:px-28">
         <div class="flex flex-wrap md:flex-nowrap md:gap-x-2">
           <div class="mb-10 w-full md:w-1/2">
@@ -205,7 +207,7 @@
               Yuk, belajar web programming bersama saya
             </h3>
             <p
-              class="max-w-md text-base font-normal text-secondary-dark md:text-lg"
+              class="max-w-md text-base font-normal text-secondary-dark dark:text-light md:text-lg"
             >
               Memiliki passion pada bidang Web Developer dan dapat menghabiskan
               banyak waktu untuk belajar hal tersebut. Telah mengikuti berbagai
@@ -217,17 +219,20 @@
               Mari berteman
             </h3>
             <p
-              class="mb-4 max-w-xl text-base font-normal text-secondary-dark md:text-lg"
+              class="mb-8 max-w-xl text-base font-normal text-secondary-dark dark:text-light md:text-lg"
             >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo
               magnam placeat officiis accusamus aspernatur nemo deleniti
               repellat impedit.
             </p>
-            <ul class="flex flex-wrap items-center" role="list link">
+            <ul
+              class="flex flex-wrap items-center justify-center"
+              role="list link"
+            >
               <li>
                 <a
                   href="https://youtube.com/"
-                  class="group mb-4 mr-4 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
+                  class="group mb-4 mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
                 >
                   <svg
                     class="group"
@@ -238,7 +243,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M15.66349,11.77493c-2.017-1.07792-3.9484-2.07746-5.9226-3.11211v6.18993c2.07746-1.12933,4.26757-2.164,5.93117-3.08639C15.67206,11.76636,15.66349,11.77493,15.66349,11.77493z"
                     />
                     <path
@@ -251,7 +256,7 @@
               <li>
                 <a
                   href="https://instagram.com/shrizaan"
-                  class="group mb-4 mr-4 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
+                  class="group mb-4 mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
                 >
                   <svg
                     class="group"
@@ -280,7 +285,7 @@
               <li>
                 <a
                   href="https://www.linkedin.com/in/shahrizan-learner"
-                  class="group mb-4 mr-4 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
+                  class="group mb-4 mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
                 >
                   <svg
                     class="group"
@@ -295,10 +300,10 @@
                       height="9.031"
                       x="5.086"
                       y="9.711"
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                     />
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M6.58716,8.478H6.56744C5.70491,8.53002,4.96352,7.87297,4.9115,7.01043C4.85948,6.1479,5.51653,5.40651,6.37907,5.35449c0.07597-0.00458,0.15217-0.00361,0.22799,0.00289C7.46923,5.29494,8.21878,5.94323,8.28123,6.8054S7.69539,8.41712,6.83322,8.47957C6.75129,8.4855,6.66901,8.48498,6.58716,8.478z M18.91168,18.74194h-3.00152v-4.83081c0-1.21423-0.43464-2.04229-1.52057-2.04229c-0.69377,0.00404-1.31022,0.44347-1.54029,1.098c-0.07687,0.23614-0.11037,0.48423-0.09887,0.7323v5.04278H9.7489c0-0.00268,0.03937-8.18371,0.00031-9.03082h3.00152v1.28c0.55314-0.96274,1.59594-1.5378,2.70532-1.49188c1.97492,0,3.45563,1.29077,3.45563,4.06463V18.74194z"
                     />
                     <path
@@ -311,7 +316,7 @@
               <li>
                 <a
                   href="https://github.com/shrizaan"
-                  class="group mb-4 mr-4 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
+                  class="group mb-4 mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
                 >
                   <svg
                     class="group"
@@ -322,7 +327,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M8.85431,21.5708c2.04081,0.68312,4.24853,0.68335,6.28949,0.00067c-0.25926,0.08328-0.53694-0.05938-0.62022-0.31864c-0.0163-0.05074-0.02426-0.10379-0.02358-0.15707c0-0.33746,0.01251-1.41247,0.01251-2.75c0.05423-0.68542-0.1921-1.36057-0.675-1.85c2.225-0.25,4.5625-1.1,4.5625-4.9375c0.01638-0.99426-0.35068-1.95667-1.025-2.6875c0.30573-0.86378,0.26996-1.81172-0.1-2.65c0,0-0.83753-0.275-2.75,1.025c-1.63629-0.45004-3.36371-0.45004-5,0c-1.91253-1.28748-2.75-1.025-2.75-1.025c-0.36998,0.83828-0.40575,1.78622-0.1,2.65c-0.67233,0.73207-1.03907,1.69364-1.025,2.6875c0,3.825,2.325,4.6875,4.55,4.9375c-0.36769,0.35377-0.59426,0.82912-0.63752,1.33752c-1.02982,0.57709-2.33248,0.21008-2.90957-0.81974C6.65195,17.01179,6.65097,17.01005,6.65,17.0083c-0.31464-0.572-0.88851-0.95457-1.53753-1.025C4.275,15.99581,4.775,16.4583,5.12498,16.64583c0.45125,0.38065,0.80305,0.86542,1.02502,1.41246c0.2,0.5625,0.85,1.63751,3.36249,1.175c0,0.83752,0.01251,1.625,0.01251,1.86248C9.525,21.3548,9.3396,21.647,8.85431,21.5708z"
                     />
                     <path
@@ -335,7 +340,7 @@
               <li>
                 <a
                   href="https://www.facebook.com/profile.php?id=100072097830295"
-                  class="group mb-4 mr-4 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
+                  class="group mb-4 mr-3 flex h-12 w-12 items-center justify-center rounded-full border border-rose-300 p-1 duration-300 ease-in-out hover:border-secondary hover:bg-teal-100"
                 >
                   <svg
                     class="group"
@@ -346,7 +351,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M12.68256,21.99994v-7.745h-2.60633v-3.01843h2.60633v-2.226c-0.20024-1.99861,1.25763-3.78113,3.25624-3.98136c0.20802-0.02084,0.41745-0.02371,0.62596-0.00857c0.77792-0.00274,1.55541,0.03699,2.329,0.119v2.69965L17.29547,7.84c-1.25323,0-1.49591,0.59552-1.49591,1.46942v1.92712h2.989l-0.38922,3.01843h-2.59966v7.745L12.68256,21.99994z"
                     />
                     <path
@@ -364,7 +369,7 @@
     <!-- About Section End -->
 
     <!-- Portfolio Section Start -->
-    <section id="portfolio" class="bg-teal-50 pt-36 pb-16">
+    <section id="portfolio" class="bg-teal-50 pt-36 pb-16 dark:bg-teal-900">
       <div class="container-default">
         <div class="mb-16 w-full md:text-center">
           <h2
@@ -377,7 +382,7 @@
           >
             Project Terbaru
           </h3>
-          <p class="text-md text-secondary-dark md:text-lg">
+          <p class="text-md text-secondary-dark dark:text-light md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet
             rerum, officiis vitae eligendi minus aspernatur quidem ea error qui
             praesentium.
@@ -402,7 +407,9 @@
                 >Shahrizan Landing Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -424,7 +431,9 @@
                 >Online Course Landing Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -446,7 +455,9 @@
                 >Computer Shop Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -468,7 +479,9 @@
                 >Coffe Shop Landing Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -490,7 +503,9 @@
                 >Bookshelf Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -512,7 +527,9 @@
                 >E-Commerce Page</a
               >
             </h3>
-            <p class="text-base font-medium text-secondary-dark">
+            <p
+              class="text-base font-medium text-secondary-dark dark:font-normal dark:text-light"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
               earum maxime ut.
             </p>
@@ -523,7 +540,7 @@
     <!-- Portfolio Section End -->
 
     <!-- Clients Section Start -->
-    <section id="clients" class="bg-rose-100 pt-36 pb-32">
+    <section id="clients" class="bg-rose-100 pt-36 pb-32 dark:bg-rose-900">
       <div class="container-default">
         <div class="w-full">
           <div class="mx-auto mb-16 md:text-center">
@@ -537,7 +554,9 @@
             >
               Yang Pernah Bekerja Sama
             </h3>
-            <p class="text-md font-normal text-secondary-dark md:text-lg">
+            <p
+              class="text-md font-normal text-secondary-dark dark:text-light md:text-lg"
+            >
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum sed
               dolore ab odio consequuntur. Natus.
             </p>
@@ -548,27 +567,27 @@
           <div class="flex flex-wrap items-center justify-center" role="list">
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 dark:opacity-80 lg:mx-6 xl:mx-8"
             >
               <img src="src/img/clients/Google.svg" alt="Google Logo" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 dark:opacity-80 lg:mx-6 xl:mx-8"
             >
               <img src="src/img/clients/Tokopedia.svg" alt="Tokopedia Logo" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 dark:opacity-80 lg:mx-6 xl:mx-8"
             >
               <img src="src/img/clients/Gojek.svg" alt="Gojek Logo" />
             </a>
             <a
               href="#"
-              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-500 hover:opacity-100 hover:grayscale-0 lg:mx-6 xl:mx-8"
+              class="mx-4 max-w-[120px] py-4 opacity-60 grayscale transition duration-300 hover:opacity-100 hover:grayscale-0 dark:opacity-80 lg:mx-6 xl:mx-8"
             >
-              <img src="src/img/clients/Traveloka.svg" alt="Traveloka Logo" />
+              <img src="src/img/clients/Tiketcom.png" alt="Tiketcom Logo" />
             </a>
           </div>
         </div>
@@ -577,7 +596,7 @@
     <!-- Clients Section End -->
 
     <!-- Blogs Section Start -->
-    <section id="blogs" class="pt-36 pb-32">
+    <section id="blogs" class="pt-36 pb-32 dark:bg-slate-900">
       <div class="container-default">
         <div class="mb-16 w-full">
           <div class="w-full md:text-center">
@@ -591,7 +610,7 @@
             >
               Tulisan Terkini
             </h3>
-            <p class="text-md text-secondary-dark md:text-lg">
+            <p class="text-md text-secondary-dark dark:text-light md:text-lg">
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum
               nostrum eveniet aliquam voluptas.
             </p>
@@ -712,7 +731,7 @@
     <!-- Blogs Section End -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="pt-36 pb-32">
+    <section id="contact" class="pt-36 pb-32 dark:bg-slate-900">
       <div class="container-default">
         <div class="mb-8 w-full md:text-center">
           <h2
@@ -725,7 +744,7 @@
           >
             Hubungi Kami
           </h3>
-          <p class="text-md text-secondary-dark md:text-lg">
+          <p class="text-md text-secondary-dark dark:text-light md:text-lg">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Dignissimos, aliquid.
           </p>
@@ -888,7 +907,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M15.66349,11.77493c-2.017-1.07792-3.9484-2.07746-5.9226-3.11211v6.18993c2.07746-1.12933,4.26757-2.164,5.93117-3.08639C15.67206,11.76636,15.66349,11.77493,15.66349,11.77493z"
                     />
                     <path
@@ -945,10 +964,10 @@
                       height="9.031"
                       x="5.086"
                       y="9.711"
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                     />
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M6.58716,8.478H6.56744C5.70491,8.53002,4.96352,7.87297,4.9115,7.01043C4.85948,6.1479,5.51653,5.40651,6.37907,5.35449c0.07597-0.00458,0.15217-0.00361,0.22799,0.00289C7.46923,5.29494,8.21878,5.94323,8.28123,6.8054S7.69539,8.41712,6.83322,8.47957C6.75129,8.4855,6.66901,8.48498,6.58716,8.478z M18.91168,18.74194h-3.00152v-4.83081c0-1.21423-0.43464-2.04229-1.52057-2.04229c-0.69377,0.00404-1.31022,0.44347-1.54029,1.098c-0.07687,0.23614-0.11037,0.48423-0.09887,0.7323v5.04278H9.7489c0-0.00268,0.03937-8.18371,0.00031-9.03082h3.00152v1.28c0.55314-0.96274,1.59594-1.5378,2.70532-1.49188c1.97492,0,3.45563,1.29077,3.45563,4.06463V18.74194z"
                     />
                     <path
@@ -972,7 +991,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M8.85431,21.5708c2.04081,0.68312,4.24853,0.68335,6.28949,0.00067c-0.25926,0.08328-0.53694-0.05938-0.62022-0.31864c-0.0163-0.05074-0.02426-0.10379-0.02358-0.15707c0-0.33746,0.01251-1.41247,0.01251-2.75c0.05423-0.68542-0.1921-1.36057-0.675-1.85c2.225-0.25,4.5625-1.1,4.5625-4.9375c0.01638-0.99426-0.35068-1.95667-1.025-2.6875c0.30573-0.86378,0.26996-1.81172-0.1-2.65c0,0-0.83753-0.275-2.75,1.025c-1.63629-0.45004-3.36371-0.45004-5,0c-1.91253-1.28748-2.75-1.025-2.75-1.025c-0.36998,0.83828-0.40575,1.78622-0.1,2.65c-0.67233,0.73207-1.03907,1.69364-1.025,2.6875c0,3.825,2.325,4.6875,4.55,4.9375c-0.36769,0.35377-0.59426,0.82912-0.63752,1.33752c-1.02982,0.57709-2.33248,0.21008-2.90957-0.81974C6.65195,17.01179,6.65097,17.01005,6.65,17.0083c-0.31464-0.572-0.88851-0.95457-1.53753-1.025C4.275,15.99581,4.775,16.4583,5.12498,16.64583c0.45125,0.38065,0.80305,0.86542,1.02502,1.41246c0.2,0.5625,0.85,1.63751,3.36249,1.175c0,0.83752,0.01251,1.625,0.01251,1.86248C9.525,21.3548,9.3396,21.647,8.85431,21.5708z"
                     />
                     <path
@@ -996,7 +1015,7 @@
                     viewBox="0 0 24 24"
                   >
                     <path
-                      class="fill-[#f88b9e] group-hover:fill-teal-100"
+                      class="fill-[#ffffff] group-hover:fill-teal-100"
                       d="M12.68256,21.99994v-7.745h-2.60633v-3.01843h2.60633v-2.226c-0.20024-1.99861,1.25763-3.78113,3.25624-3.98136c0.20802-0.02084,0.41745-0.02371,0.62596-0.00857c0.77792-0.00274,1.55541,0.03699,2.329,0.119v2.69965L17.29547,7.84c-1.25323,0-1.49591,0.59552-1.49591,1.46942v1.92712h2.989l-0.38922,3.01843h-2.59966v7.745L12.68256,21.99994z"
                     />
                     <path
