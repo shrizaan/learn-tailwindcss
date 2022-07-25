@@ -926,6 +926,14 @@ video {
   fill: #fecdd3;
 }
 
+.fill-\[\#fff\] {
+  fill: #fff;
+}
+
+.fill-\[\#ffffff\] {
+  fill: #ffffff;
+}
+
 .object-fill {
   -o-object-fit: fill;
      object-fit: fill;
@@ -1715,6 +1723,10 @@ video {
 
   .dark .dark\:lg\:border-none {
     border-style: none;
+  }
+
+  .dark .dark\:lg\:bg-transparent {
+    background-color: transparent;
   }
 }
 
